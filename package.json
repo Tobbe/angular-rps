@@ -1,0 +1,30 @@
+{
+    "name": "angular-rps",
+    "private": true,
+    "version": "0.0.1",
+    "description": "Rock-Paper-Scissors implemented as an AngularJS app",
+    "repository": "https://github.com/tobbe/rps",
+    "license": "ISC",
+    "devDependencies": {
+        "bower": "^1.7.7",
+        "http-server": "^0.9.0",
+        "jasmine-core": "^2.4.1",
+        "karma": "^0.13.22",
+        "karma-chrome-launcher": "^0.2.3",
+        "karma-jasmine": "^0.3.8",
+        "protractor": "^3.2.2"
+    },
+    "scripts": {
+        "start": "http-server ./app -a localhost -p 8000 -c-1",
+
+        "test": "npm run test-unit && npm run test-e2e",
+
+        "test-unit": "karma start karma.conf.js",
+        "test-unit-watch": "karma start karma.conf.js --no-single-run",
+
+        "update-webdriver": "webdriver-manager update",
+
+        "pretest-e2e": "npm run update-webdriver",
+        "test-e2e": "protractor e2e-tests/protractor.conf.js"
+    }
+}

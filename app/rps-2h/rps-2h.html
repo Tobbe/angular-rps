@@ -1,0 +1,37 @@
+<form>
+    <div class="human_player">
+        <h2>Human player</h2>
+        <p>Choose your hand:</p>
+        <fieldset>
+            <label>
+                <input type="radio" value="rock" ng-model="$ctrl.humanHand" name="human-hand">
+                <img src="img/hand_rock.png" alt="rock">
+            </label>
+            <label>
+                <input type="radio" value="paper" id="paper" ng-model="$ctrl.humanHand" name="human-hand">
+                <img src="img/hand_paper.png" alt="paper">
+            </label>
+            <label>
+                <input type="radio" value="scissors" id="scissors" ng-model="$ctrl.humanHand" name="human-hand">
+                <img src="img/hand_scissors.png" alt="scissors">
+            </label>
+        </fieldset>
+    </div>
+
+    <button ng-click="$ctrl.play()">Play</button>
+</form>
+
+<div class="computer_player">
+    <h2>Computer player</h2>
+    <div>
+        <p>Computer's hand: {{ $ctrl.computerHand || '???' }}</p>
+        <img src="img/hand_{{ $ctrl.computerHand }}.png" alt="{{ $ctrl.computerHand }}">
+    </div>
+</div>
+<div ng-show="$ctrl.computerHand" class="winner">
+    <div ng-switch="$ctrl.winner">
+        <p ng-switch-when="1">You won!</p>
+        <p ng-switch-when="2">The computer won :(</p>
+        <p ng-switch-default>It's a tie</p>
+    </div>
+</div>

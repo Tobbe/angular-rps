@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app="rps">
+<head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="rps-2h/rps-2h.css">
+    <link rel="stylesheet" href="rps-for-fun/rps-for-fun.css">
+    <link rel="stylesheet" href="rps-for-fun/rps-for-fun.css">
+    <link rel="stylesheet" href="topnav/topnav.css">
+    <link rel="stylesheet" href="app.animations.css">
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="core/rps-logic.service.js"></script>
+    <script src="topnav/topnav.module.js"></script>
+    <script src="topnav/topnav.component.js"></script>
+    <script src="rps-mvp/rps-mvp.module.js"></script>
+    <script src="rps-mvp/rps-mvp.component.js"></script>
+    <script src="rps-2h/rps-2h.module.js"></script>
+    <script src="rps-2h/rps-2h.component.js"></script>
+    <script src="rps-for-fun/rps-for-fun.module.js"></script>
+    <script src="rps-for-fun/rps-for-fun.component.js"></script>
+</head>
+<body>
+    <div class="view-container">
+        <topnav></topnav>
+        <div ng-view class="view-frame"></div>
+    </div>
+</body>
+</html>

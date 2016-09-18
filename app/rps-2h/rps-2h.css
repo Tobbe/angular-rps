@@ -1,0 +1,34 @@
+.human_player, .computer_player {
+    border: 2px solid #6aa84f;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.winner {
+    font-size: 180%;
+}
+
+button {
+    font-size: 120%;
+    padding: .5em;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+label > input {
+    visibility: hidden;
+    position: absolute;
+}
+
+label > input + img {
+    cursor: pointer;
+    border: 2px solid #E7EAF3;
+}
+
+label > input:checked + img {
+    border: 2px solid #4E69A6;
+}

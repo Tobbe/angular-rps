@@ -1,0 +1,17 @@
+{
+    "name": "angular-rps",
+    "description": "Rock-Paper-Scissors implemented as an AngularJS app",
+    "version": "0.0.1",
+    "homepage": "https://github.com/tobbe/rps",
+    "license": "ISC",
+    "private": true,
+    "dependencies": {
+        "angular": "1.5.x",
+        "angular-animate": "1.5.x",
+        "angular-mocks": "1.5.x",
+        "angular-resource": "1.5.x",
+        "angular-route": "1.5.x",
+        "bootstrap": "3.3.x",
+        "jquery": "2.2.x"
+    }
+}

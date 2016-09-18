@@ -1,0 +1,21 @@
+<p>Choose your hand:</p>
+<form>
+    <fieldset>
+        <input type="radio" value="rock" id="rock" ng-model="$ctrl.humanHand" name="human-hand">
+        <label for="rock">Rock</label>
+        <input type="radio" value="paper" id="paper" ng-model="$ctrl.humanHand" name="human-hand">
+        <label for="paper">Paper</label>
+        <input type="radio" value="scissors" id="scissors" ng-model="$ctrl.humanHand" name="human-hand">
+        <label for="scissors">Scissors</label>
+    </fieldset>
+
+    <button ng-click="$ctrl.play()">Play</button>
+</form>
+<div ng-show="$ctrl.computerHand">
+    <p>Computer's hand: {{ $ctrl.computerHand }}</p>
+    <div ng-switch="$ctrl.winner">
+        <p ng-switch-when="1">You won!</p>
+        <p ng-switch-when="2">The computer won :(</p>
+        <p ng-switch-default>It's a tie</p>
+    </div>
+</div>
