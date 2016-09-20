@@ -1,7 +1,7 @@
 {
     "name": "angular-rps",
     "private": true,
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Rock-Paper-Scissors implemented as an AngularJS app",
     "repository": "https://github.com/tobbe/rps",
     "license": "ISC",
